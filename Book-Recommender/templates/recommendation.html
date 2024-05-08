@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='wave.jpeg') }}");
+            background-size: 150%;
+            background-position: center top; /* Adjust the position */
+            /* Other background styles as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="recommendation-container">
+        <p>{{ recommendation }}</p>
+    </div>
+</body>
+</html>

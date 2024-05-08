@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ genre }} Books</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='genre_background.jpeg') }}");
+            background-size: cover;
+            /* Additional background styles can be added here */
+        }
+
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .book {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .book h2 {
+            color: #007bff;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .book p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Popular Books in {{ genre }}</h1>
+    <ul class="book-list">
+        {% for book in books %}
+            <li class="book">
+                <h2>{{ book['title'] }}</h2>
+                <p><strong>Author:</strong> {{ book['author'] }}</p>
+                <p><strong>Release Date:</strong> {{ book['release_date'] }}</p>
+                <p><strong>Description:</strong> {{ book['description'] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

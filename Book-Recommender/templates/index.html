@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body>
+    <h1>EruditeLibrary</h1>
+    <form action="/recommendation" method="post">
+        <label for="user_input" style="font-size: 20px;">What would you like to read?</label><br>
+        <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Get Recommendations" style="font-size: 16px;">
+    </form>
+
+    <div class="genre-container">
+    <h2>Browse by Genre</h2>
+    <ul class="genre-list">
+        <li><a href="/genre/Art">Art</a></li>
+        <li><a href="/genre/Biography">Biography</a></li>
+        <li><a href="/genre/Business">Business</a></li>
+        <li><a href="/genre/Children's">Children's</a></li>
+        <li><a href="/genre/Christian">Christian</a></li>
+        <li><a href="/genre/Classics">Classics</a></li>
+        <li><a href="/genre/Comics">Comics</a></li>
+        <li><a href="/genre/Cookbooks">Cookbooks</a></li>
+        <li><a href="/genre/Ebooks">Ebooks</a></li>
+        <li><a href="/genre/Fantasy">Fantasy</a></li>
+        <li><a href="/genre/Fiction">Fiction</a></li>
+        <li><a href="/genre/Graphic%20Novels">Graphic Novels</a></li>
+        <li><a href="/genre/Historical%20Fiction">Historical Fiction</a></li>
+        <li><a href="/genre/History">History</a></li>
+        <li><a href="/genre/Horror">Horror</a></li>
+        <li><a href="/genre/Memoir">Memoir</a></li>
+        <li><a href="/genre/Music">Music</a></li>
+        <li><a href="/genre/Mystery">Mystery</a></li>
+        <li><a href="/genre/Nonfiction">Nonfiction</a></li>
+        <li><a href="/genre/Poetry">Poetry</a></li>
+        <li><a href="/genre/Psychology">Psychology</a></li>
+        <li><a href="/genre/Romance">Romance</a></li>
+        <li><a href="/genre/Science">Science</a></li>
+        <li><a href="/genre/Science%20Fiction">Science Fiction</a></li>
+        <li><a href="/genre/Self%20Help">Self Help</a></li>
+        <li><a href="/genre/Sports">Sports</a></li>
+        <li><a href="/genre/Thriller">Thriller</a></li>
+        <li><a href="/genre/Travel">Travel</a></li>
+        <li><a href="/genre/Young%20Adult">Young Adult</a></li>
+    </ul>
+    
+</body>
+</html>

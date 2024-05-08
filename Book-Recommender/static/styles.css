@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    /* Other styles... */
+    background-image: url('/static/backgrounding.jpeg');
+    background-size: 150%; /* Adjusts the size of the background image */
+    background-position: right center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+/* Genre list styles */
+.genre-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 60%;
+    
+}
+
+.genre-list li {
+    background-color: #f8f9fa;
+    padding: 10px 20px; /* Adjust padding to add space around the text */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Adjust the margin to control the spacing between list items */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Display the list items as inline blocks */
+    width: auto; /* Allow the width to adjust based on the content */
+}
+.genre-container {
+    margin: 0 auto; /* Set margin to auto to horizontally center the container */
+}
+
+.genre-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.genre-list li a:hover {
+    color: #007bff; /* Change text color on hover */
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Example of using Google Fonts */
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the font bold for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow effect */
+    letter-spacing: 2px; /* Adjust the letter spacing as needed */
+    text-decoration: underline; /* Example: Underline the text */
+    background: linear-gradient(45deg, #ff8a00, #e52e71); /* Gradient background */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Adjust the position and size of the white box */
+.recommendation-container {
+    width: 60%; /* Adjust the width as needed */
+    height: 250px; /* Set the height to the desired value */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Padding for the white box */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    position: absolute; /* Position the container absolutely */
+    top: 50%; /* Move the container down by 50% of the viewport height */
+    left: 50%; /* Move the container right by 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Translate the container back by half its own width and height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Adjust the text size and alignment */
+.recommendation-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: center; /* Center align the text */
+}
